@@ -1,7 +1,7 @@
 import { QuartzTransformerPlugin } from "../types"
 import { visit } from "unist-util-visit"
 import { pinyin } from "pinyin-pro"
-import { Root, Element, Text } from "hast"
+import { Root, Code, Html } from "mdast"
 
 // Tone colors configuration
 const TONE_COLORS = {
@@ -38,10 +38,20 @@ function isChinese(char: string): boolean {
   )
 }
 
-// Process Chinese text and return HAST nodes with ruby annotations
-function processChineseText(text: string): Element[] {
-  const result: Element[] = []
+// Escape HTML special characters
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;")
+}
+
+// Process Chinese text and return HTML string with ruby annotations
+function processChineseText(text: string): string {
   const chars = Array.from(text)
+  let html = ""
 
   // Extract only Chinese characters for pinyin conversion
   const chineseOnly = chars.filter((c) => isChinese(c)).join("")
@@ -57,106 +67,26 @@ function processChineseText(text: string): Element[] {
       const color = TONE_COLORS[tone as keyof typeof TONE_COLORS] || TONE_COLORS[5]
 
       // Create ruby element with tone coloring
-      const rubyElement: Element = {
-        type: "element",
-        tagName: "ruby",
-        properties: {
-          className: ["zhongwen-char"],
-          style: `--tone-color: ${color}`,
-          "data-tone": tone,
-        },
-        children: [
-          {
-            type: "element",
-            tagName: "span",
-            properties: {
-              className: ["zhongwen-hanzi"],
-            },
-            children: [{ type: "text", value: char }],
-          },
-          {
-            type: "element",
-            tagName: "rp",
-            properties: {},
-            children: [{ type: "text", value: "(" }],
-          },
-          {
-            type: "element",
-            tagName: "rt",
-            properties: {
-              className: ["zhongwen-pinyin"],
-            },
-            children: [{ type: "text", value: charPinyin }],
-          },
-          {
-            type: "element",
-            tagName: "rp",
-            properties: {},
-            children: [{ type: "text", value: ")" }],
-          },
-        ],
-      }
-
-      result.push(rubyElement)
+      html += `<ruby class="zhongwen-char" style="--tone-color: ${color}" data-tone="${tone}">`
+      html += `<span class="zhongwen-hanzi">${escapeHtml(char)}</span>`
+      html += `<rp>(</rp>`
+      html += `<rt class="zhongwen-pinyin">${escapeHtml(charPinyin)}</rt>`
+      html += `<rp>)</rp>`
+      html += `</ruby>`
       pinyinIndex++
     } else if (char === "\n") {
       // Handle line breaks
-      result.push({
-        type: "element",
-        tagName: "br",
-        properties: {},
-        children: [],
-      })
+      html += `<br>`
     } else if (/\s/.test(char)) {
       // Handle whitespace
-      result.push({
-        type: "element",
-        tagName: "span",
-        properties: { className: ["zhongwen-space"] },
-        children: [{ type: "text", value: char }],
-      })
+      html += `<span class="zhongwen-space">${char}</span>`
     } else {
       // Handle punctuation and other characters
-      result.push({
-        type: "element",
-        tagName: "span",
-        properties: { className: ["zhongwen-punct"] },
-        children: [{ type: "text", value: char }],
-      })
+      html += `<span class="zhongwen-punct">${escapeHtml(char)}</span>`
     }
   }
 
-  return result
-}
-
-// Extract text content from HAST node recursively
-function extractText(node: Element | Text): string {
-  if (node.type === "text") {
-    return node.value
-  } else if (node.type === "element" && node.children) {
-    return node.children.map((child) => extractText(child as Element | Text)).join("")
-  }
-  return ""
-}
-
-// Check if node has zh-cn language
-function isZhCnCodeBlock(node: Element): boolean {
-  if (!node.properties) return false
-
-  // Check data-language attribute (set by rehype-pretty-code)
-  // The property may be stored as data-language or dataLanguage depending on processing
-  const dataLang = node.properties["data-language"] || node.properties["dataLanguage"]
-  if (dataLang === "zh-cn") {
-    return true
-  }
-
-  // Check className for language-zh-cn
-  const className = node.properties.className
-  if (Array.isArray(className)) {
-    return className.some((c) => typeof c === "string" && c === "language-zh-cn")
-  }
-
-  return false
+  return html
 }
 
 export const ZhongwenBlock: QuartzTransformerPlugin<Partial<ZhongwenOptions> | undefined> = (
@@ -164,100 +94,32 @@ export const ZhongwenBlock: QuartzTransformerPlugin<Partial<ZhongwenOptions> | u
 ) => {
   return {
     name: "ZhongwenBlock",
-    htmlPlugins() {
+    markdownPlugins() {
       return [
         () => {
           return (tree: Root) => {
-            // Process nodes in a second pass to avoid issues with tree modification
-            const nodesToReplace: Array<{
-              parent: Element
-              index: number
-              replacement: Element
-            }> = []
+            visit(tree, "code", (node: Code, index, parent) => {
+              // Check if this is a zh-cn code block
+              if (node.lang === "zh-cn" && parent && typeof index === "number") {
+                const textContent = node.value.trim()
 
-            visit(tree, "element", (node, index, parent) => {
-              if (typeof index !== "number" || !parent) return
+                if (textContent) {
+                  const processedHtml = processChineseText(textContent)
 
-              // Handle figure > pre > code (rehype-pretty-code format)
-              const hasRehypePrettyCode =
-                node.properties &&
-                ("data-rehype-pretty-code-figure" in node.properties ||
-                  "dataRehypePrettyCodeFigure" in node.properties)
-              if (node.tagName === "figure" && hasRehypePrettyCode) {
-                const pre = node.children.find(
-                  (child): child is Element => child.type === "element" && child.tagName === "pre",
-                )
+                  // Create the wrapper div with all styling
+                  const htmlContent = `<div class="zhongwen-block" data-pinyin="always" data-colors="on">${processedHtml}</div>`
 
-                if (pre) {
-                  const code = pre.children.find(
-                    (child): child is Element => child.type === "element" && child.tagName === "code",
-                  )
-
-                  if (code && isZhCnCodeBlock(code)) {
-                    const textContent = extractText(code)
-
-                    if (textContent.trim()) {
-                      const processedChildren = processChineseText(textContent.trim())
-
-                      const zhongwenBlock: Element = {
-                        type: "element",
-                        tagName: "div",
-                        properties: {
-                          className: ["zhongwen-block"],
-                          "data-pinyin": "always",
-                          "data-colors": "on",
-                        },
-                        children: processedChildren,
-                      }
-
-                      nodesToReplace.push({
-                        parent: parent as Element,
-                        index,
-                        replacement: zhongwenBlock,
-                      })
-                    }
+                  // Replace the code node with an HTML node
+                  const htmlNode: Html = {
+                    type: "html",
+                    value: htmlContent,
                   }
-                }
-              }
 
-              // Handle pre > code (standard format without rehype-pretty-code)
-              if (node.tagName === "pre") {
-                const code = node.children.find(
-                  (child): child is Element => child.type === "element" && child.tagName === "code",
-                )
-
-                if (code && isZhCnCodeBlock(code)) {
-                  const textContent = extractText(code)
-
-                  if (textContent.trim()) {
-                    const processedChildren = processChineseText(textContent.trim())
-
-                    const zhongwenBlock: Element = {
-                      type: "element",
-                      tagName: "div",
-                      properties: {
-                        className: ["zhongwen-block"],
-                        "data-pinyin": "always",
-                        "data-colors": "on",
-                      },
-                      children: processedChildren,
-                    }
-
-                    nodesToReplace.push({
-                      parent: parent as Element,
-                      index,
-                      replacement: zhongwenBlock,
-                    })
-                  }
+                  // Replace the node in the parent's children array
+                  parent.children[index] = htmlNode
                 }
               }
             })
-
-            // Apply replacements in reverse order to maintain correct indices
-            for (let i = nodesToReplace.length - 1; i >= 0; i--) {
-              const { parent, index, replacement } = nodesToReplace[i]
-              parent.children[index] = replacement
-            }
           }
         },
       ]

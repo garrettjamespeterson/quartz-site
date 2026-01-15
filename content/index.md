@@ -1,26 +1,25 @@
 ---
-publish: true
 title: Garrett's East Asian Medicine Notes
 ---
 
-# 🌿 Garrett's East Asian Medicine Notes
+# 🌿 East Asian Medicine Notes
 
-Study notes from my acupuncture and East Asian Medicine program.
+Study notes from my acupuncture and East Asian Medicine program — shared freely for fellow students.
 
-## Browse
+## Finding Your Way
 
-Use the folder list on the left to browse by subject, or use the search bar to find specific topics. The graph view shows how concepts connect.
+Browse by folder on the left, search for specific topics, or explore the graph to see how concepts connect. Leave questions or suggestions in the comments below any page.
 
 ## Subjects
 
-- **Classical Chinese Medicine** 
-- **Chinese Herbal Medicine** 
-- **Case Studies** 
+- **Classical Chinese Medicine** — theory, diagnosis, Nèijīng, Shānghánlùn
+- **Chinese Herbal Medicine** — materia medica, formulas, modifications
+- **Case Studies** — clinical applications and pattern differentiation
 
 ## Collaborate
 
-Found an error or want to contribute? Visit the [GitHub Discussions](https://github.com/garrettjamespeterson/Colleagues/discussions) to ask questions or suggest edits.
+Found an error? Have a better explanation? Visit [GitHub Discussions](https://github.com/garrettjamespeterson/Colleagues/discussions) to contribute.
 
 ---
 
-*These notes are shared freely for fellow students. Good luck with your studies!* 🪷
+*Good luck with your studies* 🪷

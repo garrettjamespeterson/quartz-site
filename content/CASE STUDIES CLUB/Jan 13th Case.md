@@ -1,54 +1,53 @@
 ---
 audience: notes
 ---
-
+	
 Zhi shou sna
 
 Jan 13, 2026 case
 
 Page 92 病例2：
-
 ```zh-cn
 男，48岁，外感1月，反复不愈，刻下全身酸楚，时流浊涕，咳嗽，痰多色白，食不知味，大便干结，胸透及外周血象均正常，舌质淡红，苔白，脉浮细而滑，证系风寒袭肺，痰浊中阻，方用止嗽散加味。服5剂，咳嗽略平，余恙不减，且见神疲乏力，形寒肢冷，短气懒言，时时自汗，舌苔如前，脉转浮而无力。
 ```
 
 ### Word-by-Word Translation (逐字翻译)
 
-| 中文 | Pīnyīn | English |
-|------|--------|---------|
-| 男 | nán | male |
-| 48岁 | sì shí bā suì | 48 years old |
-| 外感 | wài gǎn | external contraction (exterior pathogen) |
-| 1月 | yī yuè | one month |
-| 反复不愈 | fǎn fù bù yù | repeatedly fails to recover |
-| 刻下 | kè xià | currently / at present |
-| 全身酸楚 | quán shēn suān chǔ | whole body soreness and aching |
-| 时流浊涕 | shí liú zhuó tì | intermittent turbid nasal discharge |
-| 咳嗽 | ké sòu | cough |
-| 痰多色白 | tán duō sè bái | copious phlegm, white in color |
-| 食不知味 | shí bù zhī wèi | eating without knowing taste (loss of taste) |
-| 大便干结 | dà biàn gān jié | dry, bound stool (constipation) |
-| 胸透 | xiōng tòu | chest X-ray |
-| 外周血象 | wài zhōu xuè xiàng | peripheral blood picture (CBC) |
-| 均正常 | jūn zhèng cháng | all normal |
-| 舌质淡红 | shé zhì dàn hóng | tongue body pale-red |
-| 苔白 | tāi bái | white coating |
-| 脉浮细而滑 | mài fú xì ér huá | pulse floating, thin, and slippery |
-| 证系 | zhèng xì | the pattern pertains to |
-| 风寒袭肺 | fēng hán xí fèi | wind-cold invading the Lungs |
-| 痰浊中阻 | tán zhuó zhōng zǔ | phlegm-turbidity obstructing the Middle |
-| 方用 | fāng yòng | the formula used was |
-| 止嗽散加味 | zhǐ sòu sǎn jiā wèi | modified Zhi Sou San |
-| 服5剂 | fú wǔ jì | took 5 doses |
-| 咳嗽略平 | ké sòu lüè píng | cough slightly calmed |
-| 余恙不减 | yú yàng bù jiǎn | remaining symptoms did not lessen |
-| 且见 | qiě jiàn | moreover appeared |
-| 神疲乏力 | shén pí fá lì | spirit fatigued, lacking strength |
-| 形寒肢冷 | xíng hán zhī lěng | body cold, limbs cold |
-| 短气懒言 | duǎn qì lǎn yán | shortness of breath, reluctant to speak |
-| 时时自汗 | shí shí zì hàn | frequent spontaneous sweating |
-| 舌苔如前 | shé tāi rú qián | tongue coating as before |
-| 脉转浮而无力 | mài zhuǎn fú ér wú lì | pulse changed to floating and forceless |
+| 中文     | Pīnyīn                | English                                      |
+| ------ | --------------------- | -------------------------------------------- |
+| 男      | nán                   | male                                         |
+| 48岁    | sì shí bā suì         | 48 years old                                 |
+| 外感     | wài gǎn               | external contraction (exterior pathogen)     |
+| 1月     | yī yuè                | one month                                    |
+| 反复不愈   | fǎn fù bù yù          | repeatedly fails to recover                  |
+| 刻下     | kè xià                | currently / at present                       |
+| 全身酸楚   | quán shēn suān chǔ    | whole body soreness and aching               |
+| 时流浊涕   | shí liú zhuó tì       | intermittent turbid nasal discharge          |
+| 咳嗽     | ké sòu                | cough                                        |
+| 痰多色白   | tán duō sè bái        | copious phlegm, white in color               |
+| 食不知味   | shí bù zhī wèi        | eating without knowing taste (loss of taste) |
+| 大便干结   | dà biàn gān jié       | dry, bound stool (constipation)              |
+| 胸透     | xiōng tòu             | chest X-ray                                  |
+| 外周血象   | wài zhōu xuè xiàng    | peripheral blood picture (CBC)               |
+| 均正常    | jūn zhèng cháng       | all normal                                   |
+| 舌质淡红   | shé zhì dàn hóng      | tongue body pale-red                         |
+| 苔白     | tāi bái               | white coating                                |
+| 脉浮细而滑  | mài fú xì ér huá      | pulse floating, thin, and slippery           |
+| 证系     | zhèng xì              | the pattern pertains to                      |
+| 风寒袭肺   | fēng hán xí fèi       | wind-cold invading the Lungs                 |
+| 痰浊中阻   | tán zhuó zhōng zǔ     | phlegm-turbidity obstructing the Middle      |
+| 方用     | fāng yòng             | the formula used was                         |
+| 止嗽散加味  | zhǐ sòu sǎn jiā wèi   | modified Zhi Sou San                         |
+| 服5剂    | fú wǔ jì              | took 5 doses                                 |
+| 咳嗽略平   | ké sòu lüè píng       | cough slightly calmed                        |
+| 余恙不减   | yú yàng bù jiǎn       | remaining symptoms did not lessen            |
+| 且见     | qiě jiàn              | moreover appeared                            |
+| 神疲乏力   | shén pí fá lì         | spirit fatigued, lacking strength            |
+| 形寒肢冷   | xíng hán zhī lěng     | body cold, limbs cold                        |
+| 短气懒言   | duǎn qì lǎn yán       | shortness of breath, reluctant to speak      |
+| 时时自汗   | shí shí zì hàn        | frequent spontaneous sweating                |
+| 舌苔如前   | shé tāi rú qián       | tongue coating as before                     |
+| 脉转浮而无力 | mài zhuǎn fú ér wú lì | pulse changed to floating and forceless      |
 
 ---
 

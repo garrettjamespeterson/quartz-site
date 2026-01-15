@@ -239,6 +239,13 @@
 }
 
 // Capitalization modes
+// When capitalization is on, show original tone-based capitalization
+:root[data-zhongwen-capitalization="on"] {
+  .zhongwen-block .zhongwen-pinyin {
+    text-transform: none;
+  }
+}
+
 // When capitalization is off, normalize pinyin to lowercase and remove italics
 :root[data-zhongwen-capitalization="off"] {
   .zhongwen-block .zhongwen-pinyin {

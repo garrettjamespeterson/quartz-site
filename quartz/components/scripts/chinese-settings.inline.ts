@@ -22,11 +22,16 @@ document.addEventListener("nav", () => {
 
   if (!toggleButton || !panel || !closeButton) return
 
-  // Update button states to reflect current settings
+  // Update button states to reflect current settings and ensure document attributes are in sync
   const updateButtonStates = () => {
     const currentPinyin = localStorage.getItem(STORAGE_KEY_PINYIN) || "hidden"
     const currentColors = localStorage.getItem(STORAGE_KEY_COLORS) || "off"
     const currentCapitalization = localStorage.getItem(STORAGE_KEY_CAPITALIZATION) || "off"
+
+    // Ensure document attributes are in sync (fixes SPA navigation issues)
+    document.documentElement.setAttribute("data-zhongwen-pinyin", currentPinyin)
+    document.documentElement.setAttribute("data-zhongwen-colors", currentColors)
+    document.documentElement.setAttribute("data-zhongwen-capitalization", currentCapitalization)
 
     // Update pinyin buttons
     const pinyinButtons = panel.querySelector('[data-setting="pinyin"]')

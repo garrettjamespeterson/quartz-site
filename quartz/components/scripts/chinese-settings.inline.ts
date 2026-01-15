@@ -1,13 +1,16 @@
 // Load saved preferences from localStorage
 const STORAGE_KEY_PINYIN = "zhongwen-pinyin"
 const STORAGE_KEY_COLORS = "zhongwen-colors"
+const STORAGE_KEY_CAPITALIZATION = "zhongwen-capitalization"
 
-// Apply saved preferences on page load
-const savedPinyin = localStorage.getItem(STORAGE_KEY_PINYIN) || "always"
-const savedColors = localStorage.getItem(STORAGE_KEY_COLORS) || "on"
+// Apply saved preferences on page load (defaults: all off for new visitors)
+const savedPinyin = localStorage.getItem(STORAGE_KEY_PINYIN) || "hidden"
+const savedColors = localStorage.getItem(STORAGE_KEY_COLORS) || "off"
+const savedCapitalization = localStorage.getItem(STORAGE_KEY_CAPITALIZATION) || "off"
 
 document.documentElement.setAttribute("data-zhongwen-pinyin", savedPinyin)
 document.documentElement.setAttribute("data-zhongwen-colors", savedColors)
+document.documentElement.setAttribute("data-zhongwen-capitalization", savedCapitalization)
 
 document.addEventListener("nav", () => {
   const settingsContainer = document.getElementById("chinese-settings")
@@ -21,8 +24,9 @@ document.addEventListener("nav", () => {
 
   // Update button states to reflect current settings
   const updateButtonStates = () => {
-    const currentPinyin = localStorage.getItem(STORAGE_KEY_PINYIN) || "always"
-    const currentColors = localStorage.getItem(STORAGE_KEY_COLORS) || "on"
+    const currentPinyin = localStorage.getItem(STORAGE_KEY_PINYIN) || "hidden"
+    const currentColors = localStorage.getItem(STORAGE_KEY_COLORS) || "off"
+    const currentCapitalization = localStorage.getItem(STORAGE_KEY_CAPITALIZATION) || "off"
 
     // Update pinyin buttons
     const pinyinButtons = panel.querySelector('[data-setting="pinyin"]')
@@ -37,6 +41,14 @@ document.addEventListener("nav", () => {
     if (colorButtons) {
       colorButtons.querySelectorAll("button").forEach((btn) => {
         btn.classList.toggle("active", btn.getAttribute("data-value") === currentColors)
+      })
+    }
+
+    // Update capitalization buttons
+    const capitalizationButtons = panel.querySelector('[data-setting="capitalization"]')
+    if (capitalizationButtons) {
+      capitalizationButtons.querySelectorAll("button").forEach((btn) => {
+        btn.classList.toggle("active", btn.getAttribute("data-value") === currentCapitalization)
       })
     }
   }
@@ -82,6 +94,9 @@ document.addEventListener("nav", () => {
     } else if (setting === "colors") {
       localStorage.setItem(STORAGE_KEY_COLORS, value)
       document.documentElement.setAttribute("data-zhongwen-colors", value)
+    } else if (setting === "capitalization") {
+      localStorage.setItem(STORAGE_KEY_CAPITALIZATION, value)
+      document.documentElement.setAttribute("data-zhongwen-capitalization", value)
     }
   }
 

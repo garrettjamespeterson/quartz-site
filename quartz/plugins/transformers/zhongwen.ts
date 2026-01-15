@@ -31,6 +31,38 @@ function getToneFromPinyin(pinyinStr: string): number {
   return 5
 }
 
+// Apply capitalization based on tone
+// 1st tone: ALL CAPS
+// 2nd tone: last letter capitalized
+// 3rd tone: all lowercase
+// 4th tone: First Letter Capitalized
+// 5th/neutral tone: all lowercase (italics handled via CSS/markup)
+function applyToneCapitalization(pinyinStr: string, tone: number): string {
+  if (!pinyinStr) return pinyinStr
+
+  switch (tone) {
+    case 1:
+      // ALL CAPS
+      return pinyinStr.toUpperCase()
+    case 2:
+      // Last letter capitalized
+      if (pinyinStr.length === 1) {
+        return pinyinStr.toUpperCase()
+      }
+      return pinyinStr.slice(0, -1).toLowerCase() + pinyinStr.slice(-1).toUpperCase()
+    case 3:
+      // all lowercase
+      return pinyinStr.toLowerCase()
+    case 4:
+      // First Letter Capitalized
+      return pinyinStr.charAt(0).toUpperCase() + pinyinStr.slice(1).toLowerCase()
+    case 5:
+    default:
+      // all lowercase (italics handled separately)
+      return pinyinStr.toLowerCase()
+  }
+}
+
 // Check if a character is a Chinese character
 function isChinese(char: string): boolean {
   return /[\u4e00-\u9fff\u3400-\u4dbf\u{20000}-\u{2a6df}\u{2a700}-\u{2b73f}\u{2b740}-\u{2b81f}\u{2b820}-\u{2ceaf}]/u.test(
@@ -66,11 +98,19 @@ function processChineseText(text: string): string {
       const tone = getToneFromPinyin(charPinyin)
       const color = TONE_COLORS[tone as keyof typeof TONE_COLORS] || TONE_COLORS[5]
 
+      // Apply capitalization based on tone
+      const capitalizedPinyin = applyToneCapitalization(charPinyin, tone)
+      // Wrap neutral tone in <em> for italics
+      const pinyinHtml =
+        tone === 5
+          ? `<em>${escapeHtml(capitalizedPinyin)}</em>`
+          : escapeHtml(capitalizedPinyin)
+
       // Create ruby element with tone coloring
       html += `<ruby class="zhongwen-char" style="--tone-color: ${color}" data-tone="${tone}">`
       html += `<span class="zhongwen-hanzi">${escapeHtml(char)}</span>`
       html += `<rp>(</rp>`
-      html += `<rt class="zhongwen-pinyin">${escapeHtml(charPinyin)}</rt>`
+      html += `<rt class="zhongwen-pinyin">${pinyinHtml}</rt>`
       html += `<rp>)</rp>`
       html += `</ruby>`
       pinyinIndex++
@@ -107,7 +147,7 @@ export const ZhongwenBlock: QuartzTransformerPlugin<Partial<ZhongwenOptions> | u
                   const processedHtml = processChineseText(textContent)
 
                   // Create the wrapper div with all styling
-                  const htmlContent = `<div class="zhongwen-block" data-pinyin="always" data-colors="on">${processedHtml}</div>`
+                  const htmlContent = `<div class="zhongwen-block" data-pinyin="hidden" data-colors="off" data-capitalization="off">${processedHtml}</div>`
 
                   // Replace the code node with an HTML node
                   const htmlNode: Html = {

@@ -238,6 +238,18 @@
   }
 }
 
+// Capitalization modes
+// When capitalization is off, normalize pinyin to lowercase and remove italics
+:root[data-zhongwen-capitalization="off"] {
+  .zhongwen-block .zhongwen-pinyin {
+    text-transform: lowercase;
+
+    em {
+      font-style: normal;
+    }
+  }
+}
+
 // Responsive adjustments
 @media (max-width: 768px) {
   .chinese-settings {

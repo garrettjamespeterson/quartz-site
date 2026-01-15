@@ -18,6 +18,7 @@ export const sharedPageComponents: SharedLayout = {
         inputPosition: "bottom",
       },
     }),
+    Component.ChineseSettings(),
   ],
   footer: Component.Footer({
     links: {

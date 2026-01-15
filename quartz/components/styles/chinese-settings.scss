@@ -1,0 +1,263 @@
+// Chinese Settings Toggle Component
+.chinese-settings {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chinese-settings-toggle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+
+  svg {
+    color: var(--darkgray);
+    transition: color 0.2s ease;
+  }
+
+  &:hover {
+    background: var(--lightgray);
+    transform: scale(1.05);
+
+    svg {
+      color: var(--dark);
+    }
+  }
+}
+
+.chinese-settings-panel {
+  position: absolute;
+  bottom: 54px;
+  right: 0;
+  width: 260px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.2s ease;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.chinese-settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--lightgray);
+
+  span {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--dark);
+  }
+}
+
+.chinese-settings-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+
+  svg {
+    color: var(--gray);
+  }
+
+  &:hover {
+    background: var(--lightgray);
+
+    svg {
+      color: var(--dark);
+    }
+  }
+}
+
+.chinese-settings-option {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--darkgray);
+    margin-bottom: 6px;
+  }
+}
+
+.chinese-settings-buttons {
+  display: flex;
+  gap: 4px;
+
+  button {
+    flex: 1;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    border: 1px solid var(--lightgray);
+    background: var(--light);
+    color: var(--darkgray);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+
+    &:hover {
+      background: var(--lightgray);
+      color: var(--dark);
+    }
+
+    &.active {
+      background: var(--secondary);
+      color: var(--light);
+      border-color: var(--secondary);
+    }
+  }
+}
+
+// Zhongwen Block Styles
+.zhongwen-block {
+  font-size: 1.5rem;
+  line-height: 2.8;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  letter-spacing: 0.15em;
+}
+
+.zhongwen-char {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.1em;
+  position: relative;
+}
+
+.zhongwen-hanzi {
+  display: inline-block;
+}
+
+.zhongwen-pinyin {
+  font-size: 0.55em;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.zhongwen-punct {
+  margin: 0 0.05em;
+}
+
+.zhongwen-space {
+  width: 0.5em;
+  display: inline-block;
+}
+
+// Apply tone colors when enabled
+:root[data-zhongwen-colors="on"] {
+  .zhongwen-char {
+    .zhongwen-hanzi,
+    .zhongwen-pinyin {
+      color: var(--tone-color);
+    }
+  }
+}
+
+// Default (colors enabled)
+.zhongwen-block[data-colors="on"] {
+  .zhongwen-char {
+    .zhongwen-hanzi,
+    .zhongwen-pinyin {
+      color: var(--tone-color);
+    }
+  }
+}
+
+// When colors are disabled
+:root[data-zhongwen-colors="off"] {
+  .zhongwen-char {
+    .zhongwen-hanzi,
+    .zhongwen-pinyin {
+      color: var(--darkgray);
+    }
+  }
+}
+
+// Pinyin visibility modes
+// Always visible (default)
+:root[data-zhongwen-pinyin="always"] {
+  .zhongwen-block rt {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+// Hover only - hovering anywhere on the block shows all pinyin
+:root[data-zhongwen-pinyin="hover"] {
+  .zhongwen-block rt {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+
+  .zhongwen-block:hover rt {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+// Hidden
+:root[data-zhongwen-pinyin="hidden"] {
+  .zhongwen-block rt,
+  .zhongwen-block rp {
+    display: none;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .chinese-settings {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .chinese-settings-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .chinese-settings-panel {
+    width: 240px;
+    right: -5px;
+  }
+
+  .zhongwen-block {
+    font-size: 1.3rem;
+    padding: 0.75rem 1rem;
+    letter-spacing: 0.1em;
+  }
+}

@@ -3,7 +3,8 @@
 .collapsible-graph {
   margin: 0.5rem 0 1.5rem 0;
   border: 1px solid var(--lightgray);
-  border-radius: 5px;
+  border-radius: 8px;
+  background-color: var(--light);
   overflow: hidden;
 }
 
@@ -47,20 +48,22 @@ button.collapsible-graph-toggle {
 }
 
 .collapsible-graph-content {
-  overflow: hidden;
-  max-height: 500px;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.3s ease, opacity 0.3s ease;
   opacity: 1;
 
   &.collapsed {
-    max-height: 0;
+    grid-template-rows: 0fr;
     opacity: 0;
   }
 
   & > .graph-outer {
     border-top: 1px solid var(--lightgray);
     box-sizing: border-box;
-    height: 450px;
+    width: 100%;
+    aspect-ratio: 1;
+    min-height: 0;
     position: relative;
     overflow: hidden;
 

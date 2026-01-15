@@ -2,7 +2,7 @@
 date: 2026-01-14
 audience: notes
 ---
-# 🏛️ The Vital Substances 精氣血津液神
+#  精氣血津液神 🏛️ The Vital Substances
 ## Maciocia Chapters 3-4 | Comprehensive Study Guide
 
 ---

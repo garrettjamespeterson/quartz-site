@@ -226,36 +226,28 @@ export const ZhongwenBlock: QuartzTransformerPlugin<Partial<ZhongwenOptions> | u
                   (child): child is Element => child.type === "element" && child.tagName === "code",
                 )
 
-                if (code) {
-                  const className = code.properties?.className
-                  const classArray = Array.isArray(className) ? className : [className]
-                  const hasZhCn = classArray.some(
-                    (c) => typeof c === "string" && c === "language-zh-cn",
-                  )
+                if (code && isZhCnCodeBlock(code)) {
+                  const textContent = extractText(code)
 
-                  if (hasZhCn) {
-                    const textContent = extractText(code)
+                  if (textContent.trim()) {
+                    const processedChildren = processChineseText(textContent.trim())
 
-                    if (textContent.trim()) {
-                      const processedChildren = processChineseText(textContent.trim())
-
-                      const zhongwenBlock: Element = {
-                        type: "element",
-                        tagName: "div",
-                        properties: {
-                          className: ["zhongwen-block"],
-                          "data-pinyin": "always",
-                          "data-colors": "on",
-                        },
-                        children: processedChildren,
-                      }
-
-                      nodesToReplace.push({
-                        parent: parent as Element,
-                        index,
-                        replacement: zhongwenBlock,
-                      })
+                    const zhongwenBlock: Element = {
+                      type: "element",
+                      tagName: "div",
+                      properties: {
+                        className: ["zhongwen-block"],
+                        "data-pinyin": "always",
+                        "data-colors": "on",
+                      },
+                      children: processedChildren,
                     }
+
+                    nodesToReplace.push({
+                      parent: parent as Element,
+                      index,
+                      replacement: zhongwenBlock,
+                    })
                   }
                 }
               }

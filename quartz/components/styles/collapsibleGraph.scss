@@ -1,0 +1,122 @@
+@use "../../styles/variables.scss" as *;
+
+.collapsible-graph {
+  margin: 0.5rem 0 1.5rem 0;
+  border: 1px solid var(--lightgray);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+button.collapsible-graph-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--dark);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: left;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: var(--lightgray);
+  }
+
+  .graph-icon {
+    opacity: 0.7;
+    flex-shrink: 0;
+  }
+
+  .toggle-text {
+    flex-grow: 1;
+  }
+
+  .chevron {
+    opacity: 0.5;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  &.collapsed .chevron {
+    transform: rotateZ(-90deg);
+  }
+}
+
+.collapsible-graph-content {
+  overflow: hidden;
+  max-height: 500px;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+
+  &.collapsed {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  & > .graph-outer {
+    border-top: 1px solid var(--lightgray);
+    box-sizing: border-box;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+
+    & > .global-graph-icon {
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: var(--dark);
+      opacity: 0.5;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      padding: 0.2rem;
+      margin: 0.3rem;
+      top: 0;
+      right: 0;
+      border-radius: 4px;
+      background-color: transparent;
+      transition: background-color 0.5s ease;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--lightgray);
+      }
+    }
+  }
+
+  & > .global-graph-outer {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    display: none;
+    overflow: hidden;
+
+    &.active {
+      display: inline-block;
+    }
+
+    & > .global-graph-container {
+      border: 1px solid var(--lightgray);
+      background-color: var(--light);
+      border-radius: 5px;
+      box-sizing: border-box;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 80vh;
+      width: 80vw;
+
+      @media all and not ($desktop) {
+        width: 90%;
+      }
+    }
+  }
+}

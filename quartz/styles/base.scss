@@ -248,6 +248,7 @@ a {
       grid-area: grid-sidebar-right;
       margin-right: 0;
       flex-direction: column;
+      overflow-y: auto;
       @media all and ($mobile) {
         margin-left: inherit;
         margin-right: inherit;
@@ -258,6 +259,7 @@ a {
         width: 100%;
         flex-direction: row;
         padding: 0;
+        overflow-y: visible;
         & > * {
           flex: 1;
           max-height: 24rem;

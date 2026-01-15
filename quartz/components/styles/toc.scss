@@ -3,11 +3,13 @@
 .toc {
   display: flex;
   flex-direction: column;
-  overflow-y: hidden;
+  overflow-y: auto;
   min-height: 1.4rem;
-  flex: 0 0.5 auto;
+  flex: 1 1 auto;
+  max-height: calc(100vh - 200px);
   &:has(button.toc-header.collapsed) {
     flex: 0 1 1.4rem;
+    overflow-y: hidden;
   }
 }
 
@@ -43,7 +45,8 @@ ul.toc-content.overflow {
   position: relative;
   margin: 0.5rem 0;
   padding: 0;
-  max-height: calc(100% - 2rem);
+  max-height: none;
+  overflow-y: auto;
   overscroll-behavior: contain;
   list-style: none;
 

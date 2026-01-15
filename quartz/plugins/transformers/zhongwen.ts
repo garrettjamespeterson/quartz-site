@@ -100,17 +100,22 @@ function processChineseText(text: string): string {
 
       // Apply capitalization based on tone
       const capitalizedPinyin = applyToneCapitalization(charPinyin, tone)
-      // Wrap neutral tone in <em> for italics
-      const pinyinHtml =
+      // Original pinyin (lowercase with tone marks) for when capitalization is OFF
+      const originalPinyin = charPinyin.toLowerCase()
+
+      // Create spans for both capitalized and original versions
+      // Wrap neutral tone in <em> for italics (only in capitalized version)
+      const capitalizedHtml =
         tone === 5
-          ? `<em>${escapeHtml(capitalizedPinyin)}</em>`
-          : escapeHtml(capitalizedPinyin)
+          ? `<span class="pinyin-capitalized"><em>${escapeHtml(capitalizedPinyin)}</em></span>`
+          : `<span class="pinyin-capitalized">${escapeHtml(capitalizedPinyin)}</span>`
+      const originalHtml = `<span class="pinyin-original">${escapeHtml(originalPinyin)}</span>`
 
       // Create ruby element with tone coloring
       html += `<ruby class="zhongwen-char" style="--tone-color: ${color}" data-tone="${tone}">`
       html += `<span class="zhongwen-hanzi">${escapeHtml(char)}</span>`
       html += `<rp>(</rp>`
-      html += `<rt class="zhongwen-pinyin">${pinyinHtml}</rt>`
+      html += `<rt class="zhongwen-pinyin">${capitalizedHtml}${originalHtml}</rt>`
       html += `<rp>)</rp>`
       html += `</ruby>`
       pinyinIndex++

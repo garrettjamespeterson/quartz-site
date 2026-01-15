@@ -208,20 +208,36 @@
 }
 
 // Pinyin visibility modes
-// Always visible (default)
+// Default: hidden (before JS runs or when no attribute is set)
+.zhongwen-block rt,
+.zhongwen-block rp {
+  display: none;
+}
+
+// Always visible
 :root[data-zhongwen-pinyin="always"] {
   .zhongwen-block rt {
+    display: revert;
     visibility: visible;
     opacity: 1;
+  }
+
+  .zhongwen-block rp {
+    display: revert;
   }
 }
 
 // Hover only - hovering anywhere on the block shows all pinyin
 :root[data-zhongwen-pinyin="hover"] {
   .zhongwen-block rt {
+    display: revert;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.15s ease;
+  }
+
+  .zhongwen-block rp {
+    display: revert;
   }
 
   .zhongwen-block:hover rt {
@@ -238,22 +254,35 @@
   }
 }
 
-// Capitalization modes
-// When capitalization is on, show original tone-based capitalization
+// Capitalization modes - toggle between .pinyin-capitalized and .pinyin-original spans
+// Default: show original (lowercase) pinyin when no attribute set
+.zhongwen-block .pinyin-capitalized {
+  display: none;
+}
+
+.zhongwen-block .pinyin-original {
+  display: inline;
+}
+
+// When capitalization is on, show tone-based capitalization
 :root[data-zhongwen-capitalization="on"] {
-  .zhongwen-block .zhongwen-pinyin {
-    text-transform: none;
+  .zhongwen-block .pinyin-capitalized {
+    display: inline;
+  }
+
+  .zhongwen-block .pinyin-original {
+    display: none;
   }
 }
 
-// When capitalization is off, normalize pinyin to lowercase and remove italics
+// When capitalization is off, show original lowercase pinyin
 :root[data-zhongwen-capitalization="off"] {
-  .zhongwen-block .zhongwen-pinyin {
-    text-transform: lowercase;
+  .zhongwen-block .pinyin-capitalized {
+    display: none;
+  }
 
-    em {
-      font-style: normal;
-    }
+  .zhongwen-block .pinyin-original {
+    display: inline;
   }
 }
 

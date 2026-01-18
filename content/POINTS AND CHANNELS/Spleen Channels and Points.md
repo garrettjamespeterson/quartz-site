@@ -198,10 +198,11 @@ Differentiated Channel  →  Desired Qì Dynamic Effect  →  Channel Selection
 
 ### SP-3 太白 *Tài Bái* — Supreme White
 
-| | |
-|---|---|
-| **Type** | [[Source Point|Yuán-Source]] · [[Shu-Stream Point|Shū-Stream]] (Earth) |
-| **Location** | Proximal to head of 1st metatarsal, red-white skin junction |
+|              |                                                             |                                    |                      |
+| ------------ | ----------------------------------------------------------- | ---------------------------------- | -------------------- |
+| **Type**     | [[Source Point                                              | Yuán-Source]] · [[Shu-Stream Point | Shū-Stream]] (Earth) |
+| **Location** | Proximal to head of 1st metatarsal, red-white skin junction |                                    |                      |
+|              |                                                             |                                    |                      |
 
 **Primary Use:** All manifestations of [[Spleen Qi Deficiency|Spleen qì deficiency]].
 

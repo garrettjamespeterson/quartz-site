@@ -65,12 +65,12 @@ audience: notes
 >
 > **Action:** Cardinal formula for tonifying [[Spleen]] [[Qì]]. Treats weakness in transportation and transformation.
 >
-> | Herb | Dosage | Role | Properties | Function |
-> |------|--------|------|------------|----------|
-> | [[Rén Shēn]] 人參 | 3-9g | Chief | Sweet, warm | Powerful tonic for Spleen Qì (Dǎng Shēn can substitute) |
-> | [[Bái Zhú]] 白朮 | 6-9g | Deputy | Bitter, warm | Strengthens Spleen, dries dampness |
-> | [[Fú Líng]] 茯苓 | 6-9g | Assistant | Sweet, bland | Leaches dampness, assists chief/deputy |
-> | [[Zhì Gān Cǎo]] 炙甘草 | 3-6g | Envoy | Sweet, warm | Warms and regulates middle burner |
+> | Herb | Latin / Common | Dosage | Role | Properties | Function |
+> |------|----------------|--------|------|------------|----------|
+> | [[Rén Shēn]] 人參 | *Panax ginseng* / Ginseng Root | 3-9g | Chief | Sweet, warm | Powerful tonic for Spleen Qì (Dǎng Shēn can substitute) |
+> | [[Bái Zhú]] 白朮 | *Atractylodes macrocephala* / White Atractylodes | 6-9g | Deputy | Bitter, warm | Strengthens Spleen, dries dampness |
+> | [[Fú Líng]] 茯苓 | *Poria cocos* / Poria | 6-9g | Assistant | Sweet, bland | Leaches dampness, assists chief/deputy |
+> | [[Zhì Gān Cǎo]] 炙甘草 | *Glycyrrhiza uralensis* / Honey-fried Licorice | 3-6g | Envoy | Sweet, warm | Warms and regulates middle burner |
 
 > [!abstract] 對藥 Duì Yào Pairs — Sì Jūn Zǐ Tāng
 > **[[Rén Shēn]] + [[Bái Zhú]]** — Synergistic to improve transportive and transformative functions of the [[Spleen]] (Spleen Qì)
@@ -88,14 +88,14 @@ audience: notes
 >
 > **Formula:** [[Sì Jūn Zǐ Tāng]] + Duì Yào ([[Chén Pí]] / [[Bàn Xià]]) from the principles of [[Èr Chén Tāng]].
 >
-> | Herb | Dosage | Role | Function |
-> |------|--------|------|----------|
-> | [[Rén Shēn]] 人參 | 3g | Chief | Tonifies Spleen Qì |
-> | [[Bái Zhú]] 白朮 | 4.5g | Deputy | Strengthens Spleen, dries dampness |
-> | [[Fú Líng]] 茯苓 | 3g | Assistant | Leaches dampness |
-> | [[Zhì Gān Cǎo]] 炙甘草 | 3g | Envoy | Harmonizes, tonifies middle |
-> | [[Chén Pí]] 陳皮 | 3g | Assistant | Regulates Qì, dries dampness |
-> | [[Zhì Bàn Xià]] 制半夏 | 4.5g | Assistant | Dries dampness, transforms Phlegm, descends Qì |
+> | Herb | Latin / Common | Dosage | Role | Function |
+> |------|----------------|--------|------|----------|
+> | [[Rén Shēn]] 人參 | *Panax ginseng* / Ginseng Root | 3g | Chief | Tonifies Spleen Qì |
+> | [[Bái Zhú]] 白朮 | *Atractylodes macrocephala* / White Atractylodes | 4.5g | Deputy | Strengthens Spleen, dries dampness |
+> | [[Fú Líng]] 茯苓 | *Poria cocos* / Poria | 3g | Assistant | Leaches dampness |
+> | [[Zhì Gān Cǎo]] 炙甘草 | *Glycyrrhiza uralensis* / Honey-fried Licorice | 3g | Envoy | Harmonizes, tonifies middle |
+> | [[Chén Pí]] 陳皮 | *Citrus reticulata* / Aged Tangerine Peel | 3g | Assistant | Regulates Qì, dries dampness |
+> | [[Zhì Bàn Xià]] 制半夏 | *Pinellia ternata* / Processed Pinellia | 4.5g | Assistant | Dries dampness, transforms Phlegm, descends Qì |
 >
 > **Formula Analysis:**
 > - **Sì Jūn Zǐ Tāng** addresses the root: Spleen Qì deficiency
@@ -116,18 +116,18 @@ audience: notes
 >
 > **Action:** Augments [[Qì]], strengthens [[Spleen]], leaches dampness, stops diarrhea. Related formula to [[Sì Jūn Zǐ Tāng]].
 >
-> | Herb | Dosage | Role | Properties | Function |
-> |------|--------|------|------------|----------|
-> | [[Rén Shēn]] 人參 | 9g | Chief | Sweet, warm | Tonifies Qì, strengthens Spleen |
-> | [[Bái Zhú]] 白朮 | 9g | Chief | Bitter, warm | Strengthens Spleen, dries dampness |
-> | [[Fú Líng]] 茯苓 | 9g | Deputy | Sweet, bland | Leaches dampness, strengthens Spleen |
-> | [[Shān Yào]] 山藥 | 9g | Deputy | Sweet, neutral | Tonifies Qì (Spleen, [[Kidney|Kidneys]], Lungs); mild retaining effect; food-grade; helps withhold bowel movements |
-> | [[Lián Zǐ]] 蓮子 | 6g | Deputy | Sweet, astringent, neutral | Food-grade; tonifies Spleen, stops diarrhea, calms [[Shén]]; astringes to retain |
-> | [[Bái Biǎn Dòu]] 白扁豆 | 6g | Assistant | Sweet, slightly warm | Strengthens Spleen, transforms dampness |
-> | [[Yì Yǐ Rén]] 薏苡仁 | 6g | Assistant | Sweet, bland, cool | Leaches dampness, strengthens Spleen |
-> | [[Shā Rén]] 砂仁 | 6g | Assistant | Acrid, warm | Transforms dampness, moves Qì, strengthens Spleen |
-> | [[Jié Gěng]] 桔梗 | 3g | Envoy | Bitter, acrid, neutral | Opens and raises [[Lung]] Qì; guides herbs upward |
-> | [[Zhì Gān Cǎo]] 炙甘草 | 6g | Envoy | Sweet, warm | Harmonizes herbs, tonifies Qì |
+> | Herb | Latin / Common | Dosage | Role | Properties | Function |
+> |------|----------------|--------|------|------------|----------|
+> | [[Rén Shēn]] 人參 | *Panax ginseng* / Ginseng Root | 9g | Chief | Sweet, warm | Tonifies Qì, strengthens Spleen |
+> | [[Bái Zhú]] 白朮 | *Atractylodes macrocephala* / White Atractylodes | 9g | Chief | Bitter, warm | Strengthens Spleen, dries dampness |
+> | [[Fú Líng]] 茯苓 | *Poria cocos* / Poria | 9g | Deputy | Sweet, bland | Leaches dampness, strengthens Spleen |
+> | [[Shān Yào]] 山藥 | *Dioscorea opposita* / Chinese Yam | 9g | Deputy | Sweet, neutral | Tonifies Qì (Spleen, [[Kidney|Kidneys]], Lungs); mild retaining effect; food-grade; helps withhold bowel movements |
+> | [[Lián Zǐ]] 蓮子 | *Nelumbo nucifera* / Lotus Seed | 6g | Deputy | Sweet, astringent, neutral | Food-grade; tonifies Spleen, stops diarrhea, calms [[Shén]]; astringes to retain |
+> | [[Bái Biǎn Dòu]] 白扁豆 | *Lablab purpureus* / White Hyacinth Bean | 6g | Assistant | Sweet, slightly warm | Strengthens Spleen, transforms dampness |
+> | [[Yì Yǐ Rén]] 薏苡仁 | *Coix lacryma-jobi* / Job's Tears | 6g | Assistant | Sweet, bland, cool | Leaches dampness, strengthens Spleen |
+> | [[Shā Rén]] 砂仁 | *Amomum villosum* / Cardamom | 6g | Assistant | Acrid, warm | Transforms dampness, moves Qì, strengthens Spleen |
+> | [[Jié Gěng]] 桔梗 | *Platycodon grandiflorus* / Balloon Flower Root | 3g | Envoy | Bitter, acrid, neutral | Opens and raises [[Lung]] Qì; guides herbs upward |
+> | [[Zhì Gān Cǎo]] 炙甘草 | *Glycyrrhiza uralensis* / Honey-fried Licorice | 6g | Envoy | Sweet, warm | Harmonizes herbs, tonifies Qì |
 >
 > **Formula Analysis:**
 > - **Base:** Sì Jūn Zǐ Tāng (Rén Shēn, Bái Zhú, Fú Líng, Zhì Gān Cǎo) for Spleen Qì deficiency
@@ -146,16 +146,16 @@ audience: notes
 >
 > **Formula:** [[Liù Jūn Zǐ Tāng]] + [[Mù Xiāng]] + [[Shā Rén]]
 >
-> | Herb | Dosage | Role | Function |
-> |------|--------|------|----------|
-> | [[Rén Shēn]] 人參 | 3g | Chief | Tonifies Spleen Qì |
-> | [[Bái Zhú]] 白朮 | 4.5g | Deputy | Strengthens Spleen, dries dampness |
-> | [[Fú Líng]] 茯苓 | 3g | Assistant | Leaches dampness |
-> | [[Zhì Gān Cǎo]] 炙甘草 | 3g | Envoy | Harmonizes, tonifies middle |
-> | [[Chén Pí]] 陳皮 | 3g | Assistant | Regulates Qì, dries dampness |
-> | [[Zhì Bàn Xià]] 制半夏 | 4.5g | Assistant | Transforms Phlegm, descends Qì |
-> | [[Mù Xiāng]] 木香 | 2g | Assistant | Moves Qì, alleviates pain; best for abdominal pain and bloating |
-> | [[Shā Rén]] 砂仁 | 2g | Assistant | Type of cardamom; goes to middle burner, transforms dampness, moves Qì |
+> | Herb | Latin / Common | Dosage | Role | Function |
+> |------|----------------|--------|------|----------|
+> | [[Rén Shēn]] 人參 | *Panax ginseng* / Ginseng Root | 3g | Chief | Tonifies Spleen Qì |
+> | [[Bái Zhú]] 白朮 | *Atractylodes macrocephala* / White Atractylodes | 4.5g | Deputy | Strengthens Spleen, dries dampness |
+> | [[Fú Líng]] 茯苓 | *Poria cocos* / Poria | 3g | Assistant | Leaches dampness |
+> | [[Zhì Gān Cǎo]] 炙甘草 | *Glycyrrhiza uralensis* / Honey-fried Licorice | 3g | Envoy | Harmonizes, tonifies middle |
+> | [[Chén Pí]] 陳皮 | *Citrus reticulata* / Aged Tangerine Peel | 3g | Assistant | Regulates Qì, dries dampness |
+> | [[Zhì Bàn Xià]] 制半夏 | *Pinellia ternata* / Processed Pinellia | 4.5g | Assistant | Transforms Phlegm, descends Qì |
+> | [[Mù Xiāng]] 木香 | *Aucklandia lappa* / Costus Root | 2g | Assistant | Moves Qì, alleviates pain; best for abdominal pain and bloating |
+> | [[Shā Rén]] 砂仁 | *Amomum villosum* / Cardamom | 2g | Assistant | Type of cardamom; goes to middle burner, transforms dampness, moves Qì |
 >
 > **Formula Analysis:**
 > - **Base:** Liù Jūn Zǐ Tāng for Spleen Qì deficiency with Phlegm
@@ -173,12 +173,12 @@ audience: notes
 >
 > **Action:** Warms the middle jiāo, tonifies [[Qì]], strengthens [[Spleen]] and [[Stomach]]
 >
-> | Herb | Dosage | Role | Properties | Function |
-> |------|--------|------|------------|----------|
-> | [[Gān Jiāng]] 乾薑 | 9g | Chief | Acrid, hot | Warms the middle jiāo, dispels cold, restores [[Yáng]] |
-> | [[Rén Shēn]] 人參 | 9g | Deputy | Sweet, warm | Tonifies Qì, strengthens Spleen |
-> | [[Bái Zhú]] 白朮 | 9g | Deputy | Bitter, warm | Strengthens Spleen, dries dampness |
-> | [[Zhì Gān Cǎo]] 炙甘草 | 9g | Envoy | Sweet, warm | Harmonizes herbs, tonifies middle, moderates Gān Jiāng |
+> | Herb | Latin / Common | Dosage | Role | Properties | Function |
+> |------|----------------|--------|------|------------|----------|
+> | [[Gān Jiāng]] 乾薑 | *Zingiber officinale* / Dried Ginger | 9g | Chief | Acrid, hot | Warms the middle jiāo, dispels cold, restores [[Yáng]] |
+> | [[Rén Shēn]] 人參 | *Panax ginseng* / Ginseng Root | 9g | Deputy | Sweet, warm | Tonifies Qì, strengthens Spleen |
+> | [[Bái Zhú]] 白朮 | *Atractylodes macrocephala* / White Atractylodes | 9g | Deputy | Bitter, warm | Strengthens Spleen, dries dampness |
+> | [[Zhì Gān Cǎo]] 炙甘草 | *Glycyrrhiza uralensis* / Honey-fried Licorice | 9g | Envoy | Sweet, warm | Harmonizes herbs, tonifies middle, moderates Gān Jiāng |
 >
 > **Formula Analysis:**
 > - **Gān Jiāng as Chief:** Unlike [[Sì Jūn Zǐ Tāng]] (which has Rén Shēn as chief), here the warming herb leads — indicating the primary problem is cold, not just Qì deficiency
@@ -198,16 +198,16 @@ audience: notes
 >
 > **Action:** Tonifies [[Qì]] of the middle jiāo, raises sunken [[Yáng]]
 >
-> | Herb | Dosage | Role | Properties | Function |
-> |------|--------|------|------------|----------|
-> | [[Huáng Qí]] 黃芪 | 12-24g | Chief | Sweet, slightly warm | Tonifies Qì, **raises Yáng**, stabilizes exterior |
-> | [[Rén Shēn]] 人參 | 9g | Deputy | Sweet, warm | Tonifies Qì, strengthens [[Spleen]] |
-> | [[Bái Zhú]] 白朮 | 9g | Deputy | Bitter, warm | Strengthens Spleen, dries dampness |
-> | [[Zhì Gān Cǎo]] 炙甘草 | 6g | Deputy | Sweet, warm | Tonifies Qì, harmonizes |
-> | [[Dāng Guī]] 當歸 | 6g | Assistant | Sweet, acrid, warm | Nourishes [[Blood]] (Qì and Blood are linked) |
-> | [[Chén Pí]] 陳皮 | 6g | Assistant | Acrid, bitter, warm | Regulates Qì, prevents stagnation from tonics |
-> | [[Shēng Má]] 升麻 | 3-6g | Envoy | Acrid, sweet, cool | **Raises Yáng Qì**, lifts sunken Qì |
-> | [[Chái Hú]] 柴胡 | 3-6g | Envoy | Bitter, acrid, cool | **Raises Yáng Qì**, spreads [[Liver]] Qì |
+> | Herb | Latin / Common | Dosage | Role | Properties | Function |
+> |------|----------------|--------|------|------------|----------|
+> | [[Huáng Qí]] 黃芪 | *Astragalus membranaceus* / Astragalus | 12-24g | Chief | Sweet, slightly warm | Tonifies Qì, **raises Yáng**, stabilizes exterior |
+> | [[Rén Shēn]] 人參 | *Panax ginseng* / Ginseng Root | 9g | Deputy | Sweet, warm | Tonifies Qì, strengthens [[Spleen]] |
+> | [[Bái Zhú]] 白朮 | *Atractylodes macrocephala* / White Atractylodes | 9g | Deputy | Bitter, warm | Strengthens Spleen, dries dampness |
+> | [[Zhì Gān Cǎo]] 炙甘草 | *Glycyrrhiza uralensis* / Honey-fried Licorice | 6g | Deputy | Sweet, warm | Tonifies Qì, harmonizes |
+> | [[Dāng Guī]] 當歸 | *Angelica sinensis* / Chinese Angelica | 6g | Assistant | Sweet, acrid, warm | Nourishes [[Blood]] (Qì and Blood are linked) |
+> | [[Chén Pí]] 陳皮 | *Citrus reticulata* / Aged Tangerine Peel | 6g | Assistant | Acrid, bitter, warm | Regulates Qì, prevents stagnation from tonics |
+> | [[Shēng Má]] 升麻 | *Cimicifuga foetida* / Black Cohosh | 3-6g | Envoy | Acrid, sweet, cool | **Raises Yáng Qì**, lifts sunken Qì |
+> | [[Chái Hú]] 柴胡 | *Bupleurum chinense* / Bupleurum | 3-6g | Envoy | Bitter, acrid, cool | **Raises Yáng Qì**, spreads [[Liver]] Qì |
 >
 > **Formula Analysis:**
 > - **Huáng Qí as Chief:** Larger dose than usual; specifically chosen for its lifting/raising quality
@@ -227,20 +227,20 @@ audience: notes
 >
 > **Action:** Tonifies [[Qì]], nourishes [[Blood]], strengthens [[Spleen]], nourishes [[Heart]]
 >
-> | Herb | Dosage | Role | Properties | Function |
-> |------|--------|------|------------|----------|
-> | [[Huáng Qí]] 黃芪 | 12g | Chief | Sweet, slightly warm | Tonifies Qì, raises Yáng |
-> | [[Lóng Yǎn Ròu]] 龍眼肉 | 12g | Chief | Sweet, warm | Tonifies Heart Blood, calms [[Shén]] |
-> | [[Rén Shēn]] 人參 | 6g | Deputy | Sweet, warm | Tonifies Qì, strengthens Spleen |
-> | [[Bái Zhú]] 白朮 | 9g | Deputy | Bitter, warm | Strengthens Spleen |
-> | [[Fú Líng]] 茯苓 | 9g | Deputy | Sweet, bland | Strengthens Spleen, calms Shén |
-> | [[Suān Zǎo Rén]] 酸棗仁 | 9g | Deputy | Sweet, sour, neutral | Nourishes Heart, calms Shén |
-> | [[Dāng Guī]] 當歸 | 9g | Assistant | Sweet, acrid, warm | Nourishes and invigorates Blood |
-> | [[Yuǎn Zhì]] 遠志 | 6g | Assistant | Acrid, bitter, warm | Calms Shén, connects Heart and [[Kidney]] |
-> | [[Mù Xiāng]] 木香 | 6g | Assistant | Acrid, bitter, warm | Moves Qì, prevents stagnation |
-> | [[Zhì Gān Cǎo]] 炙甘草 | 3g | Envoy | Sweet, warm | Harmonizes herbs |
-> | [[Shēng Jiāng]] 生薑 | 3pc | Envoy | Acrid, warm | Harmonizes [[Stomach]] |
-> | [[Dà Zǎo]] 大棗 | 3pc | Envoy | Sweet, warm | Tonifies Spleen, nourishes Blood |
+> | Herb | Latin / Common | Dosage | Role | Properties | Function |
+> |------|----------------|--------|------|------------|----------|
+> | [[Huáng Qí]] 黃芪 | *Astragalus membranaceus* / Astragalus | 12g | Chief | Sweet, slightly warm | Tonifies Qì, raises Yáng |
+> | [[Lóng Yǎn Ròu]] 龍眼肉 | *Dimocarpus longan* / Longan Fruit | 12g | Chief | Sweet, warm | Tonifies Heart Blood, calms [[Shén]] |
+> | [[Rén Shēn]] 人參 | *Panax ginseng* / Ginseng Root | 6g | Deputy | Sweet, warm | Tonifies Qì, strengthens Spleen |
+> | [[Bái Zhú]] 白朮 | *Atractylodes macrocephala* / White Atractylodes | 9g | Deputy | Bitter, warm | Strengthens Spleen |
+> | [[Fú Líng]] 茯苓 | *Poria cocos* / Poria | 9g | Deputy | Sweet, bland | Strengthens Spleen, calms Shén |
+> | [[Suān Zǎo Rén]] 酸棗仁 | *Ziziphus jujuba* var. *spinosa* / Sour Jujube Seed | 9g | Deputy | Sweet, sour, neutral | Nourishes Heart, calms Shén |
+> | [[Dāng Guī]] 當歸 | *Angelica sinensis* / Chinese Angelica | 9g | Assistant | Sweet, acrid, warm | Nourishes and invigorates Blood |
+> | [[Yuǎn Zhì]] 遠志 | *Polygala tenuifolia* / Polygala | 6g | Assistant | Acrid, bitter, warm | Calms Shén, connects Heart and [[Kidney]] |
+> | [[Mù Xiāng]] 木香 | *Aucklandia lappa* / Costus Root | 6g | Assistant | Acrid, bitter, warm | Moves Qì, prevents stagnation |
+> | [[Zhì Gān Cǎo]] 炙甘草 | *Glycyrrhiza uralensis* / Honey-fried Licorice | 3g | Envoy | Sweet, warm | Harmonizes herbs |
+> | [[Shēng Jiāng]] 生薑 | *Zingiber officinale* / Fresh Ginger | 3pc | Envoy | Acrid, warm | Harmonizes [[Stomach]] |
+> | [[Dà Zǎo]] 大棗 | *Ziziphus jujuba* / Jujube Date | 3pc | Envoy | Sweet, warm | Tonifies Spleen, nourishes Blood |
 >
 > **Formula Analysis:**
 > - **Dual focus:** Tonifies both Spleen Qì AND Heart Blood — addresses the Spleen's role in producing Blood and Heart's role in governing it
@@ -263,18 +263,18 @@ audience: notes
 >
 > **Formula:** [[Sì Jūn Zǐ Tāng]] + [[Sì Wù Tāng]] (Four Gentlemen + Four Substances)
 >
-> | Herb | Dosage | Role | Properties | Function |
-> |------|--------|------|------------|----------|
-> | **Qì Tonics (Sì Jūn Zǐ Tāng):** |||||
-> | [[Rén Shēn]] 人參 | 9g | Chief | Sweet, warm | Tonifies Qì, strengthens [[Spleen]] |
-> | [[Bái Zhú]] 白朮 | 9g | Deputy | Bitter, warm | Strengthens Spleen, dries dampness |
-> | [[Fú Líng]] 茯苓 | 9g | Assistant | Sweet, bland | Leaches dampness, strengthens Spleen |
-> | [[Zhì Gān Cǎo]] 炙甘草 | 6g | Envoy | Sweet, warm | Harmonizes herbs |
-> | **Blood Tonics (Sì Wù Tāng):** |||||
-> | [[Shú Dì Huáng]] 熟地黃 | 12g | Chief | Sweet, slightly warm | Nourishes Blood and [[Yīn]] |
-> | [[Dāng Guī]] 當歸 | 9g | Deputy | Sweet, acrid, warm | Nourishes and invigorates Blood |
-> | [[Bái Sháo]] 白芍 | 9g | Assistant | Bitter, sour, cool | Nourishes Blood, preserves Yīn |
-> | [[Chuān Xiōng]] 川芎 | 6g | Assistant | Acrid, warm | Invigorates Blood, moves Qì |
+> | Herb | Latin / Common | Dosage | Role | Properties | Function |
+> |------|----------------|--------|------|------------|----------|
+> | **Qì Tonics (Sì Jūn Zǐ Tāng):** ||||||
+> | [[Rén Shēn]] 人參 | *Panax ginseng* / Ginseng Root | 9g | Chief | Sweet, warm | Tonifies Qì, strengthens [[Spleen]] |
+> | [[Bái Zhú]] 白朮 | *Atractylodes macrocephala* / White Atractylodes | 9g | Deputy | Bitter, warm | Strengthens Spleen, dries dampness |
+> | [[Fú Líng]] 茯苓 | *Poria cocos* / Poria | 9g | Assistant | Sweet, bland | Leaches dampness, strengthens Spleen |
+> | [[Zhì Gān Cǎo]] 炙甘草 | *Glycyrrhiza uralensis* / Honey-fried Licorice | 6g | Envoy | Sweet, warm | Harmonizes herbs |
+> | **Blood Tonics (Sì Wù Tāng):** ||||||
+> | [[Shú Dì Huáng]] 熟地黃 | *Rehmannia glutinosa* / Prepared Rehmannia | 12g | Chief | Sweet, slightly warm | Nourishes Blood and [[Yīn]] |
+> | [[Dāng Guī]] 當歸 | *Angelica sinensis* / Chinese Angelica | 9g | Deputy | Sweet, acrid, warm | Nourishes and invigorates Blood |
+> | [[Bái Sháo]] 白芍 | *Paeonia lactiflora* / White Peony Root | 9g | Assistant | Bitter, sour, cool | Nourishes Blood, preserves Yīn |
+> | [[Chuān Xiōng]] 川芎 | *Ligusticum chuanxiong* / Sichuan Lovage | 6g | Assistant | Acrid, warm | Invigorates Blood, moves Qì |
 >
 > **Formula Analysis:**
 > - **Elegant combination:** Combines the two cardinal formulas for Qì and Blood deficiency
@@ -291,14 +291,14 @@ audience: notes
 >
 > **Action:** Dries dampness, improves [[Spleen]]'s transportive function, promotes [[Qì]] movement, harmonizes [[Stomach]]
 >
-> | Herb | Dosage | Role | Properties | Function |
-> |------|--------|------|------------|----------|
-> | [[Cāng Zhú]] 蒼朮 | 12g | Chief | Acrid, bitter, warm | Strongly dries dampness, strengthens Spleen |
-> | [[Hòu Pò]] 厚朴 | 9g | Deputy | Bitter, acrid, warm | Moves Qì, transforms dampness, reduces distension |
-> | [[Chén Pí]] 陳皮 | 9g | Assistant | Acrid, bitter, warm | Regulates Qì, dries dampness, harmonizes Stomach |
-> | [[Zhì Gān Cǎo]] 炙甘草 | 3g | Envoy | Sweet, warm | Harmonizes herbs, protects Stomach |
-> | [[Shēng Jiāng]] 生薑 | 2pc | Envoy | Acrid, warm | Harmonizes Stomach, assists in transforming dampness |
-> | [[Dà Zǎo]] 大棗 | 2pc | Envoy | Sweet, warm | Protects Stomach, harmonizes |
+> | Herb | Latin / Common | Dosage | Role | Properties | Function |
+> |------|----------------|--------|------|------------|----------|
+> | [[Cāng Zhú]] 蒼朮 | *Atractylodes lancea* / Atractylodes | 12g | Chief | Acrid, bitter, warm | Strongly dries dampness, strengthens Spleen |
+> | [[Hòu Pò]] 厚朴 | *Magnolia officinalis* / Magnolia Bark | 9g | Deputy | Bitter, acrid, warm | Moves Qì, transforms dampness, reduces distension |
+> | [[Chén Pí]] 陳皮 | *Citrus reticulata* / Aged Tangerine Peel | 9g | Assistant | Acrid, bitter, warm | Regulates Qì, dries dampness, harmonizes Stomach |
+> | [[Zhì Gān Cǎo]] 炙甘草 | *Glycyrrhiza uralensis* / Honey-fried Licorice | 3g | Envoy | Sweet, warm | Harmonizes herbs, protects Stomach |
+> | [[Shēng Jiāng]] 生薑 | *Zingiber officinale* / Fresh Ginger | 2pc | Envoy | Acrid, warm | Harmonizes Stomach, assists in transforming dampness |
+> | [[Dà Zǎo]] 大棗 | *Ziziphus jujuba* / Jujube Date | 2pc | Envoy | Sweet, warm | Protects Stomach, harmonizes |
 >
 > **Formula Analysis:**
 > - **Cāng Zhú vs Bái Zhú:** [[Cāng Zhú]] is more drying and dispersing; [[Bái Zhú]] is more tonifying. Here we need strong drying action.
@@ -315,18 +315,18 @@ audience: notes
 >
 > **Action:** Clears Damp-Heat, promotes [[Qì]] transformation in the [[Sān Jiāo]]
 >
-> | Herb | Dosage | Role | Properties | Function |
-> |------|--------|------|------------|----------|
-> | **The Three Kernels (Rén):** |||||
-> | [[Xìng Rén]] 杏仁 | 15g | Chief | Bitter, slightly warm | Opens upper jiāo, diffuses [[Lung]] Qì |
-> | [[Bái Dòu Kòu]] 白豆蔻 | 6g | Chief | Acrid, warm | Opens middle jiāo, transforms dampness |
-> | [[Yì Yǐ Rén]] 薏苡仁 | 18g | Chief | Sweet, bland, cool | Opens lower jiāo, leaches dampness, clears heat |
-> | **Supporting Herbs:** |||||
-> | [[Huá Shí]] 滑石 | 18g | Deputy | Sweet, bland, cold | Clears heat, promotes urination |
-> | [[Tōng Cǎo]] 通草 | 6g | Deputy | Sweet, bland, cool | Promotes urination, clears heat |
-> | [[Zhú Yè]] 竹葉 | 6g | Assistant | Sweet, bland, cold | Clears heat, promotes urination |
-> | [[Hòu Pò]] 厚朴 | 6g | Assistant | Bitter, acrid, warm | Moves Qì, transforms dampness |
-> | [[Bàn Xià]] 半夏 | 10g | Assistant | Acrid, warm | Dries dampness, harmonizes [[Stomach]] |
+> | Herb | Latin / Common | Dosage | Role | Properties | Function |
+> |------|----------------|--------|------|------------|----------|
+> | **The Three Kernels (Rén):** ||||||
+> | [[Xìng Rén]] 杏仁 | *Prunus armeniaca* / Apricot Kernel | 15g | Chief | Bitter, slightly warm | Opens upper jiāo, diffuses [[Lung]] Qì |
+> | [[Bái Dòu Kòu]] 白豆蔻 | *Amomum kravanh* / White Cardamom | 6g | Chief | Acrid, warm | Opens middle jiāo, transforms dampness |
+> | [[Yì Yǐ Rén]] 薏苡仁 | *Coix lacryma-jobi* / Job's Tears | 18g | Chief | Sweet, bland, cool | Opens lower jiāo, leaches dampness, clears heat |
+> | **Supporting Herbs:** ||||||
+> | [[Huá Shí]] 滑石 | Talcum / Talc | 18g | Deputy | Sweet, bland, cold | Clears heat, promotes urination |
+> | [[Tōng Cǎo]] 通草 | *Tetrapanax papyrifer* / Rice Paper Pith | 6g | Deputy | Sweet, bland, cool | Promotes urination, clears heat |
+> | [[Zhú Yè]] 竹葉 | *Lophatherum gracile* / Bamboo Leaf | 6g | Assistant | Sweet, bland, cold | Clears heat, promotes urination |
+> | [[Hòu Pò]] 厚朴 | *Magnolia officinalis* / Magnolia Bark | 6g | Assistant | Bitter, acrid, warm | Moves Qì, transforms dampness |
+> | [[Bàn Xià]] 半夏 | *Pinellia ternata* / Pinellia | 10g | Assistant | Acrid, warm | Dries dampness, harmonizes [[Stomach]] |
 >
 > **Formula Analysis:**
 > - **Three Kernels strategy:** Each kernel opens a different level of the Sān Jiāo — upper (Xìng Rén/Lungs), middle (Bái Dòu Kòu/Spleen), lower (Yì Yǐ Rén/Bladder)
@@ -343,14 +343,14 @@ audience: notes
 >
 > **Cardinal formula for [[Phlegm]]** — the base formula from which many Phlegm-treating formulas derive
 >
-> | Herb | Dosage | Role | Properties | Function |
-> |------|--------|------|------------|----------|
-> | [[Bàn Xià]] 半夏 | 15g | Chief | Acrid, warm | Dries dampness, transforms Phlegm, descends Qì, stops vomiting |
-> | [[Chén Pí]] 陳皮 | 15g | Deputy | Acrid, bitter, warm | Regulates Qì, dries dampness, transforms Phlegm |
-> | [[Fú Líng]] 茯苓 | 9g | Assistant | Sweet, bland | Strengthens [[Spleen]], leaches dampness (addresses root) |
-> | [[Zhì Gān Cǎo]] 炙甘草 | 4.5g | Envoy | Sweet, warm | Harmonizes herbs, protects [[Stomach]] |
-> | [[Shēng Jiāng]] 生薑 | 7pc | Envoy | Acrid, warm | Assists Bàn Xià in transforming Phlegm, reduces toxicity |
-> | [[Wū Méi]] 烏梅 | 1pc | Envoy | Sour, astringent | Astringes [[Lung]] Qì, balances the dispersing herbs |
+> | Herb | Latin / Common | Dosage | Role | Properties | Function |
+> |------|----------------|--------|------|------------|----------|
+> | [[Bàn Xià]] 半夏 | *Pinellia ternata* / Pinellia | 15g | Chief | Acrid, warm | Dries dampness, transforms Phlegm, descends Qì, stops vomiting |
+> | [[Chén Pí]] 陳皮 | *Citrus reticulata* / Aged Tangerine Peel | 15g | Deputy | Acrid, bitter, warm | Regulates Qì, dries dampness, transforms Phlegm |
+> | [[Fú Líng]] 茯苓 | *Poria cocos* / Poria | 9g | Assistant | Sweet, bland | Strengthens [[Spleen]], leaches dampness (addresses root) |
+> | [[Zhì Gān Cǎo]] 炙甘草 | *Glycyrrhiza uralensis* / Honey-fried Licorice | 4.5g | Envoy | Sweet, warm | Harmonizes herbs, protects [[Stomach]] |
+> | [[Shēng Jiāng]] 生薑 | *Zingiber officinale* / Fresh Ginger | 7pc | Envoy | Acrid, warm | Assists Bàn Xià in transforming Phlegm, reduces toxicity |
+> | [[Wū Méi]] 烏梅 | *Prunus mume* / Smoked Plum | 1pc | Envoy | Sour, astringent | Astringes [[Lung]] Qì, balances the dispersing herbs |
 >
 > **Formula Analysis:**
 > - **"Two Aged" (Èr Chén):** Refers to Bàn Xià and Chén Pí — both herbs improve with age (less harsh, more effective)
